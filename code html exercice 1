@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice DOM</title>
+</head>
+<body>
+    <div id="maDiv">
+        <p id="monParagraphe">Ceci est un paragraphe</p>
+    </div>
+    <script>
+const monParagraphe = document.getElementById('monParagraphe');
+const maDiv = document.getElementById('maDiv');
+monParagraphe.innerText = "Le texte a été modifié";
+monParagraphe.style.backgroundColor = "lightblue";
+monParagraphe.style.textAlign = "center";
+maDiv.addEventListener('click', function() {
+    monParagraphe.innerText = "Un clic a été détecté";
+});
+    </script>
+</body>
+</html>
